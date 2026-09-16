@@ -67,6 +67,8 @@ details p{padding:18px 0 2px;margin:0}
 .contact-lines a{font-weight:700}
 .footer{border-top:1px solid #174b3c;text-align:center;padding:28px;color:#b9972e;font-size:14px}
 .placeholder-calendar{border:1px dashed #3a8c70;padding:28px;text-align:center;border-radius:7px;background:#0b2a20}
+.calendar-wrap{width:100%;overflow:hidden;border:1px solid var(--line);border-radius:8px;background:#fff}
+.calendar-wrap iframe{display:block;width:100%;max-width:100%;min-height:600px}
 .small{font-size:15px;color:#c39c30}
 @media(max-width:800px){
   .header-inner{padding:18px 18px 0}
@@ -79,4 +81,5 @@ details p{padding:18px 0 2px;margin:0}
   .two-col,.faq-grid{grid-template-columns:1fr}
   h1{font-size:36px}h2{font-size:29px}.hero-band h1{font-size:36px}
   p{font-size:17px}
+  .calendar-wrap iframe{min-height:520px}
 }
