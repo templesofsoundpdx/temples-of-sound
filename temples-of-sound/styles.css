@@ -45,14 +45,13 @@ nav a:hover { text-decoration: underline; text-underline-offset: .3rem; }
 .brand {
   display: flex;
   align-items: center;
+  gap: .65rem;
   text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .02em;
 }
 
-.brand img {
-  display: block;
-  width: clamp(13rem, 24vw, 18rem);
-  height: auto;
-}
+.lotus { color: var(--gold); font-size: 1.4rem; }
 
 .header-link, .text-link {
   color: var(--mint);
@@ -217,8 +216,6 @@ footer p { margin: 0; }
 
 @media (max-width: 720px) {
   .site-header { flex-wrap: wrap; gap: .7rem; }
-  .brand { width: 100%; justify-content: center; }
-  .brand img { width: min(13.5rem, 68vw); }
   nav { width: 100%; justify-content: space-between; gap: .5rem; font-size: .73rem; }
   .header-link { font-size: .73rem; text-align: right; }
   .hero { min-height: calc(88svh - 100px); padding-top: 4rem; }
