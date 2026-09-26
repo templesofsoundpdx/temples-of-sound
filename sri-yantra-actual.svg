@@ -269,8 +269,6 @@
 		</clipPath>
 		<mask id="sri">
 			<rect class="blk" x="-2.500" y="-2.500" width="5.000" height="5.000" />
-			<rect class="wht" x="-2.363" y="-2.363" width="4.726" height="4.726" clip-path="url(#outeryellowframe)" />
-			<rect class="blk" x="-2.363" y="-2.363" width="4.726" height="4.726" clip-path="url(#outermagentaframe)" />
 			<circle class="wht" cx="0" cy="0" r="2.363" clip-path="url(#c1)" />
 			<circle class="blk" cx="0" cy="0" r="2.363" clip-path="url(#c2)" />
 			<circle class="wht" cx="0" cy="0" r="2.363" clip-path="url(#c3)" />
