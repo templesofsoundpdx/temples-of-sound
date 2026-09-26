@@ -193,6 +193,7 @@ footer {
 }
 
 footer p { margin: 0; }
+.art-credit { opacity: .45; font-size: .7rem; }
 
 @media (max-width: 720px) {
   .header-inner { padding: 18px 18px 0; }
