@@ -84,8 +84,8 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
   width: clamp(18rem, 40vw, 34rem);
   aspect-ratio: 1;
   transform: translateY(-48%);
-  opacity: .3;
-  filter: drop-shadow(0 0 24px rgba(224, 187, 104, .12));
+  opacity: .15;
+  filter: drop-shadow(0 0 18px rgba(224, 187, 104, .06));
 }
 
 .eyebrow {
@@ -201,7 +201,7 @@ footer p { margin: 0; }
   .hero { min-height: calc(88svh - 100px); padding-top: 4rem; }
   .home-nav { display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; gap: .35rem; padding: 10px 0 16px; -webkit-overflow-scrolling: touch; }
   .home-nav a { flex: 0 0 auto; white-space: nowrap; font-size: 16px; }
-  .hero-symbol { top: 38%; right: -9rem; width: 25rem; opacity: .22; }
+  .hero-symbol { top: 38%; right: -9rem; width: 25rem; opacity: .1; }
   .welcome, .practice { grid-template-columns: 1fr; gap: 2rem; }
   .welcome-copy, .practice-copy { padding-top: 0; }
   .cards { grid-template-columns: 1fr; }
