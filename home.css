@@ -173,6 +173,24 @@ h1 em { color: var(--mint); font-weight: 500; }
 .cards p { margin: 0; color: rgba(243, 240, 231, .8); }
 .offerings .text-link { margin-top: 2rem; }
 
+.campaign {
+  border-block: 1px solid var(--line);
+  background: linear-gradient(125deg, #0b241a, #123b2c 72%, #0b241a);
+}
+.campaign-inner {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1fr);
+  gap: clamp(2.5rem, 8vw, 8rem);
+  max-width: 1200px;
+  margin: auto;
+  padding: clamp(5rem, 10vw, 8rem) clamp(1.25rem, 5vw, 4.5rem);
+}
+.campaign h2 { max-width: 9ch; font-size: clamp(2.8rem, 6vw, 5.3rem); }
+.campaign-copy { max-width: 36rem; }
+.campaign-copy p:first-child { margin-top: 0; }
+.campaign-copy p { color: rgba(243, 240, 231, .9); }
+.campaign .button { margin-top: 1rem; }
+
 .closing { padding: clamp(5rem, 9vw, 8rem) 1.25rem; background: var(--emerald); text-align: center; }
 .closing h2 { font-size: clamp(3rem, 7vw, 6rem); }
 .closing .button { background: var(--cream); border-color: var(--cream); }
@@ -202,7 +220,7 @@ footer p { margin: 0; }
   .home-nav { display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; gap: .35rem; padding: 10px 0 16px; -webkit-overflow-scrolling: touch; }
   .home-nav a { flex: 0 0 auto; white-space: nowrap; font-size: 16px; }
   .hero-symbol { top: 38%; right: -9rem; width: 25rem; opacity: .1; }
-  .welcome, .practice { grid-template-columns: 1fr; gap: 2rem; }
+  .welcome, .practice, .campaign-inner { grid-template-columns: 1fr; gap: 2rem; }
   .welcome-copy, .practice-copy { padding-top: 0; }
   .cards { grid-template-columns: 1fr; }
   .cards article { min-height: 0; }
