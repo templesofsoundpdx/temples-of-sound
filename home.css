@@ -42,6 +42,7 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
 nav { display: flex; align-items: center; gap: clamp(.7rem, 2.5vw, 2rem); font-size: .85rem; }
 nav a { text-decoration: none; }
 nav a:hover { text-decoration: underline; text-underline-offset: .3rem; }
+nav a.active { color: var(--gold); }
 
 .brand {
   display: flex;
@@ -88,7 +89,7 @@ nav a:hover { text-decoration: underline; text-underline-offset: .3rem; }
   box-shadow: 0 0 0 6rem rgba(217, 185, 104, .035), 0 0 0 12rem rgba(217, 185, 104, .025);
 }
 
-.hero-mark {
+.hero-symbol {
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -96,19 +97,9 @@ nav a:hover { text-decoration: underline; text-underline-offset: .3rem; }
   width: clamp(18rem, 40vw, 34rem);
   aspect-ratio: 1;
   transform: translateY(-48%);
-  opacity: .22;
+  opacity: .3;
+  filter: drop-shadow(0 0 24px rgba(224, 187, 104, .12));
 }
-
-.hero-mark span {
-  position: absolute;
-  inset: 10% 38%;
-  border: 2px solid var(--gold);
-  border-radius: 50%;
-}
-
-.hero-mark span:nth-child(2) { transform: rotate(45deg); }
-.hero-mark span:nth-child(3) { transform: rotate(90deg); }
-.hero-mark span:nth-child(4) { transform: rotate(135deg); }
 
 .eyebrow {
   margin: 0 0 1.1rem;
@@ -223,7 +214,9 @@ footer p { margin: 0; }
   nav { width: 100%; justify-content: space-between; gap: .5rem; font-size: .73rem; }
   .header-link { font-size: .73rem; text-align: right; }
   .hero { min-height: calc(88svh - 100px); padding-top: 4rem; }
-  .hero-mark { top: 35%; right: -9rem; width: 24rem; }
+  .home-nav { display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; gap: .35rem; padding-bottom: .35rem; -webkit-overflow-scrolling: touch; }
+  .home-nav a { flex: 0 0 auto; white-space: nowrap; }
+  .hero-symbol { top: 38%; right: -9rem; width: 25rem; opacity: .22; }
   .welcome, .practice { grid-template-columns: 1fr; gap: 2rem; }
   .welcome-copy, .practice-copy { padding-top: 0; }
   .cards { grid-template-columns: 1fr; }
