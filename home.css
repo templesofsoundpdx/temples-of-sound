@@ -25,34 +25,21 @@ body {
 a { color: inherit; }
 a:focus-visible { outline: 2px solid var(--gold); outline-offset: 5px; }
 
-.site-header {
-  position: relative;
-  z-index: 2;
-  inset: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem clamp(1.25rem, 5vw, 4.5rem);
-  border-bottom: 1px solid var(--line);
-}
-
-nav { display: flex; align-items: center; gap: clamp(.7rem, 2.5vw, 2rem); font-size: .85rem; }
-nav a { text-decoration: none; }
-nav a:hover { text-decoration: underline; text-underline-offset: .3rem; }
-nav a.active { color: var(--gold); }
+.header { background: var(--ink); border-top: 5px solid rgba(255,255,255,.22); }
+.header-inner { max-width: 1120px; margin: auto; padding: 18px 28px 0; }
+.nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 22px 0 25px; }
+.nav a { color: var(--gold); text-decoration: none; font-size: 18px; padding: 6px 15px; border-radius: 5px; transition: .2s; }
+.nav a:hover, .nav a.active { background: var(--emerald); color: white; }
 
 .brand {
   display: flex;
-  align-items: center;
+  justify-content: center;
   text-decoration: none;
 }
 
 .brand img {
   display: block;
-  width: clamp(13rem, 24vw, 18rem);
+  width: min(360px, 72vw);
   height: auto;
 }
 
@@ -208,14 +195,11 @@ footer {
 footer p { margin: 0; }
 
 @media (max-width: 720px) {
-  .site-header { flex-wrap: wrap; gap: .7rem; }
-  .brand { width: 100%; justify-content: center; }
-  .brand img { width: min(13.5rem, 68vw); }
-  nav { width: 100%; justify-content: space-between; gap: .5rem; font-size: .73rem; }
-  .header-link { font-size: .73rem; text-align: right; }
+  .header-inner { padding: 18px 18px 0; }
+  .brand img { width: min(240px, 68vw); }
   .hero { min-height: calc(88svh - 100px); padding-top: 4rem; }
-  .home-nav { display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; gap: .35rem; padding-bottom: .35rem; -webkit-overflow-scrolling: touch; }
-  .home-nav a { flex: 0 0 auto; white-space: nowrap; }
+  .home-nav { display: flex; flex-direction: row; justify-content: flex-start; flex-wrap: nowrap; overflow-x: auto; gap: .35rem; padding: 10px 0 16px; -webkit-overflow-scrolling: touch; }
+  .home-nav a { flex: 0 0 auto; white-space: nowrap; font-size: 16px; }
   .hero-symbol { top: 38%; right: -9rem; width: 25rem; opacity: .22; }
   .welcome, .practice { grid-template-columns: 1fr; gap: 2rem; }
   .welcome-copy, .practice-copy { padding-top: 0; }
