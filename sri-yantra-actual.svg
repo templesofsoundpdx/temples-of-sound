@@ -13,7 +13,7 @@
 		.blk
 		{stroke:none;fill:#000000;}
 		.gold
-		{stroke:none;fill:#e0bb68;}
+		{stroke:none;fill:url(#goldMetal);}
 		.mag
 		{stroke:none;fill:#ff00ff;}
 		.yel
@@ -38,6 +38,25 @@
 	</style>
 
 	<defs>
+		<!-- Temples of Sound jewel palette; geometry below remains unchanged. -->
+		<radialGradient id="emeraldCore" cx="42%" cy="35%" r="70%">
+			<stop offset="0%" stop-color="#1f8a60"/>
+			<stop offset="48%" stop-color="#0e5b3e"/>
+			<stop offset="100%" stop-color="#07130f"/>
+		</radialGradient>
+		<linearGradient id="emeraldPetal" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" stop-color="#164b37"/>
+			<stop offset="50%" stop-color="#0e5b3e"/>
+			<stop offset="100%" stop-color="#07130f"/>
+		</linearGradient>
+		<linearGradient id="goldMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+			<stop offset="0%" stop-color="#f4dea0"/>
+			<stop offset="28%" stop-color="#e0bb68"/>
+			<stop offset="58%" stop-color="#b98731"/>
+			<stop offset="82%" stop-color="#e0bb68"/>
+			<stop offset="100%" stop-color="#fff0ba"/>
+		</linearGradient>
+
 		<radialGradient id="radial1">
 			<stop offset="0%" stop-color="#00ffff"/>
 			<stop offset="100%" stop-color="#ff00ff"/>
@@ -278,5 +297,39 @@
 			<circle class="blk" cx="0" cy="0" r="2.363" clip-path="url(#c5)" />
 		</mask>
 	</defs>
+
+	<!-- Decorative backing only; the original Sri Yantra mask/geometry is preserved exactly. -->
+	<circle cx="0" cy="0" r="1.61" fill="url(#emeraldCore)" opacity="0.94"/>
+	<g fill="url(#emeraldPetal)" stroke="#e0bb68" stroke-width="0.018" opacity="0.92">
+		<use xlink:href="#smallpetal" transform="rotate(0)" />
+		<use xlink:href="#smallpetal" transform="rotate(22.5)" />
+		<use xlink:href="#smallpetal" transform="rotate(45)" />
+		<use xlink:href="#smallpetal" transform="rotate(67.5)" />
+		<use xlink:href="#smallpetal" transform="rotate(90)" />
+		<use xlink:href="#smallpetal" transform="rotate(112.5)" />
+		<use xlink:href="#smallpetal" transform="rotate(135)" />
+		<use xlink:href="#smallpetal" transform="rotate(157.5)" />
+		<use xlink:href="#smallpetal" transform="rotate(180)" />
+		<use xlink:href="#smallpetal" transform="rotate(202.5)" />
+		<use xlink:href="#smallpetal" transform="rotate(225)" />
+		<use xlink:href="#smallpetal" transform="rotate(247.5)" />
+		<use xlink:href="#smallpetal" transform="rotate(270)" />
+		<use xlink:href="#smallpetal" transform="rotate(292.5)" />
+		<use xlink:href="#smallpetal" transform="rotate(315)" />
+		<use xlink:href="#smallpetal" transform="rotate(337.5)" />
+		<use xlink:href="#largepetal" transform="rotate(0)" />
+		<use xlink:href="#largepetal" transform="rotate(45)" />
+		<use xlink:href="#largepetal" transform="rotate(90)" />
+		<use xlink:href="#largepetal" transform="rotate(135)" />
+		<use xlink:href="#largepetal" transform="rotate(180)" />
+		<use xlink:href="#largepetal" transform="rotate(225)" />
+		<use xlink:href="#largepetal" transform="rotate(270)" />
+		<use xlink:href="#largepetal" transform="rotate(315)" />
+	</g>
+	<circle cx="0" cy="0" r="1.82" fill="none" stroke="#e0bb68" stroke-width="0.025" opacity="0.9"/>
+	<circle cx="0" cy="0" r="1.69" fill="none" stroke="#f4dea0" stroke-width="0.012" opacity="0.65"/>
+
 	<rect class="gold" x="-2.500" y="-2.500" width="5.000" height="5.000" mask="url(#sri)" />
+	<!-- Tiny bindu, intentionally proportional to the traditional center point. -->
+	<circle cx="0" cy="0" r="0.012" fill="url(#goldMetal)" />
 </svg>
