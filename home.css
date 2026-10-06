@@ -211,6 +211,24 @@ footer {
 }
 
 footer p { margin: 0; }
+
+.directory-invite {
+  grid-column: 1 / -1;
+  max-width: 48rem;
+  margin-top: .5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  color: rgba(243, 240, 231, .82);
+}
+
+.directory-invite a {
+  display: inline-block;
+  margin-top: .65rem;
+  color: var(--mint);
+  font-weight: 600;
+  text-underline-offset: .3rem;
+}
+
 .art-credit { opacity: .45; font-size: .7rem; }
 
 @media (max-width: 720px) {
